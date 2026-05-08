@@ -11,16 +11,7 @@ DADOS_ROBO = {
     "type": "service_account",
     "project_id": "modified-return-471321-k6",
     "private_key_id": "03d62135b9a55e0f0bfe6dbd5dfdef88c718e075",
-    "private_key": "COLE_AQUI_O_TEXTO_GIGANTE_QUE_COMECA_COM_BEGIN_PRIVATE_KEY", # <--- COLE AQUI!
-    "client_email": "treino-bot@modified-return-471321-k6.iam.gserviceaccount.com",
-    "client_id": "112000857757706046520",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/web/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/treino-bot%40modified-return-471321-k6.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-}
-
+  
 ID_PLANILHA = "1Q5dc9QcIRjhPn_SOHjX9LZTJtFJS2D7mjs2KjaMZXlE"
 
 def conectar_google():
