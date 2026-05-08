@@ -7,7 +7,8 @@ from google.oauth2.service_account import Credentials
 st.set_page_config(page_title="Meu Treino Pro", layout="wide", page_icon="🏋️‍♂️")
 
 # SUBSTITUA PELO SEU ID DA PLANILHA (O código entre /d/ e /edit/)
-ID_PLANILHA = "1Gu49CBNiHFDBIMgt3Y-o_Nl5pGN2MRKImGAycSyJDuH0" 
+# --- CONEXÃO COM GOOGLE SHEETS ---
+ID_PLANILHA = "1Gu49CBNiHFDBIMgt3Y-o_Nl5pGN2MRKImGAycSyJDuH0"
 LINK_CSV = f"https://docs.google.com/spreadsheets/d/{ID_PLANILHA}/export?format=csv&gid=0"
 
 def conectar_google():
