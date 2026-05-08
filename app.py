@@ -9,8 +9,8 @@ st.set_page_config(page_title="Meu Treino Pro", layout="wide", page_icon="🏋�
 # SUBSTITUA PELO SEU ID DA PLANILHA (O código entre /d/ e /edit/)
 # --- CONEXÃO COM GOOGLE SHEETS ---
 # --- CONEXÃO COM GOOGLE SHEETS ---
-ID_PLANILHA = "1Q5dc9QcIRjhPn_SOHjX9LZTJtFJS2D7mjs2KjaMZXLE"
-LINK_CSV = f"https://docs.google.com/spreadsheets/d/{1Q5dc9QcIRjhPn_SOHjX9LZTJtFJS2D7mjs2KjaMZXlE}/export?format=csv&gid=0"
+ID_PLANILHA = "1Q5dc9QcIRjhPn_SOHjX9LZTJtFJS2D7mjs2KjaMZXlE"
+LINK_CSV = f"https://docs.google.com/spreadsheets/d/{ID_PLANILHA}/export?format=csv&gid=0"
 
 def conectar_google():
     scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
