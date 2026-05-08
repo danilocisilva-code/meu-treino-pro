@@ -8,10 +8,19 @@ st.set_page_config(page_title="Meu Treino Pro", layout="wide")
 # ID da sua planilha (final MZXlE)
 ID_PLANILHA = "1Q5dc9QcIRjhPn_SOHjX9LZTJtFJS2D7mjs2KjaMZXlE"
 
+import json # Garanta que tem essa linha no topo do app.py
+
 def conectar():
     scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-    # Garanta que o nome do arquivo no GitHub é exatamente credentials.json
-    creds = Credentials.from_service_account_file("credentials.json", scopes=scope)
+    
+    # Lendo o arquivo credentials.json
+    with open("credentials.json") as f:
+        info = json.load(f)
+    
+    # REPARO DA CHAVE: Isso converte os \n em quebras de linha reais
+    info["private_key"] = info["private_key"].replace("\\n", "\n")
+    
+    creds = Credentials.from_service_account_info(info, scopes=scope)
     return gspread.authorize(creds)
 
 try:
